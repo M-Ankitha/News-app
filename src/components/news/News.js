@@ -5,10 +5,10 @@ const News = () => {
   const [mynews, setMyNews] = useState([]);
 
   const fetchData = async () => {
-    let resonse = await fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=4ea6ad368600493395679dc5e0b51b18"
+    let response = await fetch(
+      "https://newsapi.org/v2/top-headlines?country=us&apiKey=714ef9b8a6ef47d19b4bda6f4f0d100f"
     );
-    let data = await resonse.json();
+    let data = await response.json();
     setMyNews(data.articles);
   };
 
